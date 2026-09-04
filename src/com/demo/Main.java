@@ -1,4 +1,7 @@
-package com.demo.annotation;
+package com.demo;
+
+import com.demo.service.OrderService;
+import com.demo.context.MyApplicationContext;
 
 /**
  * 1. 包扫描

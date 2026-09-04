@@ -1,6 +1,10 @@
-package com.demo.annotation;
+package com.demo.service;
+
+import com.demo.annotation.MyComponent;
+import com.demo.annotation.MyLog;
+
 @MyComponent
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @MyLog("查询用户")
     @Override
     public void getUser(){

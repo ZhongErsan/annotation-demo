@@ -1,4 +1,6 @@
-package com.demo.annotation;
+package com.demo.processor;
+
+import com.demo.annotation.MyLog;
 
 import java.lang.reflect.Method;
 //需要手动扫描，手动触发process，一次性执行完所有带有注解的方法

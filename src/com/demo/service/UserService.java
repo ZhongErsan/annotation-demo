@@ -1,4 +1,4 @@
-package com.demo.annotation;
+package com.demo.service;
 
 public interface UserService {
     void getUser();

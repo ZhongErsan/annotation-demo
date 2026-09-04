@@ -1,4 +1,10 @@
-package com.demo.annotation;
+package com.demo.context;
+
+import com.demo.annotation.MyAutowired;
+import com.demo.annotation.MyComponent;
+import com.demo.annotation.MyLog;
+import com.demo.aop.ProxyFactory;
+import com.demo.scanner.ClassScanner;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -12,7 +18,7 @@ public class MyApplicationContext {
     //...表示可变参数，可以传多个类
     public MyApplicationContext(String basePackage){
         //扫描包
-        List<Class<?>> classes=ClassScanner.scan(basePackage);
+        List<Class<?>> classes= ClassScanner.scan(basePackage);
         //创建所有Bean
         createBeans(classes);
         //进行依赖注入

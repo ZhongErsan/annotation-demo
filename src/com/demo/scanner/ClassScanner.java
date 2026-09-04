@@ -1,4 +1,4 @@
-package com.demo.annotation;
+package com.demo.scanner;
 
 import java.io.File;
 import java.net.URL;
@@ -41,7 +41,7 @@ public class ClassScanner {
             // 只处理 .class 字节码文件，跳过 .java、txt等其他文件
             if(!file.getName().endsWith(".class"))
                 continue;
-            // 拼装完整全限定类名 com.demo.annotation.UserServiceImpl
+            // 拼装完整全限定类名
             String className=packageName+"."+file.getName().replace(".class","");
             // 反射加载这个类，得到Class对象，存入集合
             try{

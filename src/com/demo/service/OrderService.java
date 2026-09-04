@@ -1,4 +1,8 @@
-package com.demo.annotation;
+package com.demo.service;
+
+import com.demo.annotation.MyAutowired;
+import com.demo.annotation.MyComponent;
+
 @MyComponent
 public class OrderService {
     @MyAutowired

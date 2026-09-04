@@ -1,4 +1,6 @@
-package com.demo.annotation;
+package com.demo.aop;
+
+import com.demo.annotation.MyLog;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
