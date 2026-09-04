@@ -29,7 +29,7 @@ import com.demo.context.MyApplicationContext;
  */
 public class Main {
     public static void main(String[] args){
-        MyApplicationContext context=new MyApplicationContext("com.demo.annotation");
+        MyApplicationContext context=new MyApplicationContext("com.demo");
         OrderService orderService=context.getBean(OrderService.class);
         orderService.createOrder();
 
